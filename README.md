@@ -1,6 +1,6 @@
 # Crucial-Interval-Calculation
 To identify the Crucial Interval inside a minima in a free energy landscape,
-we utilize the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian (Christ), whose work Christ greatly admires. 
+we utilize the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian (Mr Sob), whose work Christ greatly admires. 
 
 This tool provides the probability densities of two values across the molecular dynamics (MD) simulation, allowing the conversion of chemical values into free energy.
 
