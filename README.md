@@ -4,7 +4,7 @@ we utilize the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian 
 
 This tool provides the probability densities of two values across the molecular dynamics (MD) simulation, allowing the conversion of chemical values into free energy.
 
-However, ddtpd v1.3 only offers energy projections of the two values and cannot identify the crucial frames, a gap that the CIC package aims to fill.
+However, ddtpd v1.3 only offers projections of the two values and cannot identify the crucial frames, a gap that the CIC package aims to fill.
 
 For example:
 
