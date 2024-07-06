@@ -1,19 +1,20 @@
-# Crucial-Interval-Calculation
-To identify the Crucial Interval inside a minima in a free energy landscape,
-we utilize the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian (Mr Sob), whose work Christ greatly admires. 
+# Crucial-Interval-Calculation (CIC)
+To identify the Crucial Interval inside a minima in a free energy landscape (FEL).
+
+To visualise the PCA into FEL, we utilize the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian (Mr Sob), whose work Christ greatly admires. 
 
 This tool provides the probability densities of two values across the molecular dynamics (MD) simulation, allowing the conversion of chemical values into free energy.
 
 However, ddtpd v1.3 only offers projections of the two values and cannot identify the crucial frames, a gap that the CIC package aims to fill.
 
 For example:
-
 Using ddtpd v1.3, we calculated a minima bottom at (PC1_bottom, PC2_bottom), 
 which represents a projection point in the free energy landscape (FEL) rather than an actual point in the MD simulation. 
-To define a range around this bottom, we use the following bounds: PC1_bottom-ΔPC1 < PC1_minima < PC1_bottom+ΔPC1 and PC2_bottom-ΔPC2 < PC2_minima < PC2_bottom+ΔPC2. 
-This allows us to screen the data within the minima, resulting in a CSV file like "PC1_PC2_minima4.csv."
+To define a range around this bottom, we use the following bounds: (1) PC1_bottom-ΔPC1 < PC1_minima < PC1_bottom+ΔPC1 and (2) PC2_bottom-ΔPC2 < PC2_minima < PC2_bottom+ΔPC2. 
+Then please type your ranges of PC1 and PC2 into the package to let the package to calculate the Crucial Interval with highest count of the minima frames.
 
-Using the CIC package, we can then calculate a continuous interval containing the highest count of minima points.
+Users should set the (1) length of your interval and (2) the range of your PCs. 
+In this study [2], we aim to select an interval of one ns, equal to 100 frames, so here you can write 99 (selected 100 frames) or 100 (selected 101 frames). 
 
 
 While using CIC, there is no doubt you have already used the ddtpd v1.3, so please don't forget to cite: [1] http://sobereva.com/73
