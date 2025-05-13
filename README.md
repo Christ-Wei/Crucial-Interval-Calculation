@@ -1,7 +1,7 @@
 # Crucial-Interval-Calculation (CIC)
 To identify the Crucial Interval inside a minima in a free energy landscape (FEL).
 
-To visualise the PCA into FEL, we utilize the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian (Mr Sob), whose work Christ greatly admires. 
+To visualise the PCA into FEL, we utilise the ddtpd v1.3 tool (http://sobereva.com/73) developed by Dr Lu Tian (Mr Sob), whose work Chris greatly admires. 
 
 This tool provides the probability densities of two values across the molecular dynamics (MD) simulation, allowing the conversion of chemical values into free energy.
 
